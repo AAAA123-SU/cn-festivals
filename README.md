@@ -7,6 +7,16 @@
 - **零第三方依赖**：只用 Python 标准库（3.9+），GitHub Actions 里无需 `pip install` 即可重建；
 - **每年自动更新**：工作流每月自动重建并发布，客户端按订阅地址定期拉取。
 
+## 在线订阅地址（已部署，可直接用）
+
+```
+https://aaaa123-su.github.io/cn-festivals/china-festivals.ics
+```
+
+订阅页：<https://aaaa123-su.github.io/cn-festivals/>
+
+iPhone：设置 → 日历 → 账户 → 添加账户 → 其他 → 添加已订阅的日历 → 粘贴上面的链接 → 下一步。
+
 ## 快速开始
 
 ```bash
@@ -23,9 +33,9 @@ python -m unittest discover -s tests
 | `docs/index.html` | 订阅引导页（iOS 添加步骤、全年一览） |
 | `data/holidays.json` | 法定假期与调休数据（唯一需要人工维护的文件） |
 
-## 拿到可订阅的公网链接
+## 重新部署 / 迁移到自己的域名
 
-iOS 订阅要求链接可公网访问，本地 `localhost` 只能用于 Apple 日历桌面端测试。
+iOS 订阅要求链接可公网访问，本地 `localhost` 只能用于 Apple 日历桌面端测试。当前实例已发布在 GitHub Pages，如需换仓库或换账号：
 
 ### 方案一：GitHub Pages（推荐，免费且自动更新）
 
